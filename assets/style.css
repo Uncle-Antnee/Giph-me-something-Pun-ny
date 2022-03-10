@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-container{
+    background-color: aliceblue;
+    border-radius: 10px;
+    max-width:100% ; 
+    padding:100px 20px;
+    width: 800px; 
+    text-align: center;
+    margin-top: 600px;
+    /* margin: auto; */
+    position: absolute;
+
+    /* margin:auto; */
+}
+.favorite-joke-container{
+    background-color: aliceblue;
+    border-radius: 10px;
+    max-width:100% ; 
+    padding:100px 20px;
+    width: 800px; 
+    text-align: center;
+    margin-top: 200px;
+}
+.viewfavorate {
+    font-size: 15px;
+    color:darkblue;
+    /* margin: 50px auto; */
+    text-align: right;
+text-decoration: underline;
+    
+}
+h3{
+    margin: 0;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+.joke {
+    font-size: 30px;
+    color:darkblue;
+    margin: 50px auto;
+    
+}
+.favicon{
+margin-bottom: -10px;
+    height: 35px;
+    width: 35px;
+}
+.btn{
+    background-color: skyblue;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 14px 40px;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
