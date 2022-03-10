@@ -1,10 +1,16 @@
-var api='https://api.api-ninjas.com/v1/jokes?limit=1'
-var getJokebtn=document.querySelector("#get_joke")
-var jokeContainerEl=document.querySelector(".main-container")
-var jokeGenerate=document.querySelector("#joke-display")
-var favoriteJoke=document.querySelector(".favorite-joke")
-var favoriteIcon=document.querySelector(".favicon")
-var favoriteList=document.querySelector(".viewfavorate")
+var api = 'https://api.api-ninjas.com/v1/jokes?limit=1'
+// the below variable can be removed
+var getJokebtn = document.querySelector("#get_joke")
+// the below variable can be removed
+var jokeContainerEl = document.querySelector(".main-container")
+// the below variable can be removed
+var jokeGenerate = document.querySelector("#joke-display")
+// the below variable can be removed
+var favoriteJoke = document.querySelector(".favorite-joke")
+//the below variable can be removed
+var favoriteIcon = document.querySelector(".favicon")
+// the below variable can be removed
+var favoriteList = document.querySelector(".viewfavorite")
 console.log(jokeContainerEl)
 // const request = require('request');
 
@@ -33,8 +39,8 @@ fetch(req).then((response)=>{
 }) 
 
 .catch ((err)=>{
-console.log('ERROR',error.message)
-});
+    console.log('ERROR',error.message)
+    });
 
 }
 
@@ -75,7 +81,7 @@ var favoriteJokeEl= function(currentFJoke){
     favoriteJoke.appendChild(favoriteJokeContainer)
     favoriteJokeContainer.appendChild(jokeList)
     favoriteJokeContainer.appendChild(goBackBtn)
-    
+
     var backMain=function(){
         jokeContainerEl.style.display = "block"
         favoriteJokeContainer.style.display="none"
@@ -87,4 +93,3 @@ var favoriteJokeEl= function(currentFJoke){
 
 getJokebtn.addEventListener("click",gameStart)
 favoriteIcon.addEventListener("click",favoriteJokeEl)
-

@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <img src="./assets/images/emoji-background.jpeg"
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Giph Me Something Punny</title> 
+  </head>
+  <body>
+  
+<!-- start of Joke API content -->
+  <section>
+<!-- TEST: IS-RESPONSIVE, IS-HOVER, IS-FOCUS & IS-ACTIVE FOR BUTTONS -->
+      <button class="button is-warning is-normal is-responsive is-hover is-focus is-active joke">Joke</button>
+      <button class="button is-danger is-normal is-responsive is-hover is-focus is-active">Favorite</button>
+      <div class="notification is-warning" id="joke-display">
+        <button class="delete"></button>
+      </div>
+    </section>
+<!-- End of Joke API content -->
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>Try to Not Laugh</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-<section class="main-container">
-
-    <div class="mainpage">
-        <h3>Joke Club</h3>
-        <div class="joke" id="joke">
-            Here goes the joke!
-        </div>
-        <button class="btn" id="get_joke"> Get Another Joke</button>
-        <img src="./assets/image/favorites-star-icon-png-0.png" alt="favorite icon" class="favicon"/>
-    </div>
-    <div  id="joke-display">
-
-    </div>
-</section>
-<section class="favorite-joke">
-
-</section>
-
-<script src="./assets/js/style.js"></script>
+<!-- Start of Giphy API content -->
+  <input class="input is-warning" id="search" for="search" type="text search" placeholder="Search">
+  <button class="button is-warning is-normal is-responsive is-hover is-focus is-active joke">Go</button>
+  <div class="giph"></div>
+  <!-- End of Giphy API content -->
+    <script src="./assets/js/giphy-script.js"></script>
+    <script src="./assets/js/jokes-script.js"></script>
 </body>
 </html>
-
-
