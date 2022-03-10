@@ -10,13 +10,28 @@
 </head>
 
 <body>
+
+    <section class="main-container">
+        <div class="mainpage">
+            <h3>Joke Club</h3>
+            <div class="joke" id="joke">Here goes the joke!</div>
+            <button class="btn" id="get_joke"> Get Another Joke</button>
+            <img src="./assets/image/favorites-star-icon-png-0.png" alt="favorite icon" class="favicon"/>
+        </div>
+        <div  id="joke-display"></div>
+    </section>
+    <section class="favorite-joke">    
+    </section>
+
     <!-- START OF GIPHY API SEARCH BOX AND BUTTON -->
-    <label for="search">Search</label>
-    <input id="search" type="search" />
-    <button id="btnSearch">Go</button>    
-    <div class="giph"></div>  
+        <section>                  
+            <input id="search" type="search"/>
+            <button id="btnSearch">Go</button>    
+            <div class="giph"></div>
+        </section>
     <!-- END OF GIPHY API SEARCH BOX AND BUTTON -->
-    <section id="favorite">asdasd</section>
+    <script src="./assets/js/joke.js"></script>
+    <script src="./assets/js/giphy.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
