@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <img src="./assets/images/emoji-background.jpeg"
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Giph Me Something Punny</title> 
-  </head>
-  <body>
-  
-<!-- start of Joke API content -->
-  <section>
-<!-- TEST: IS-RESPONSIVE, IS-HOVER, IS-FOCUS & IS-ACTIVE FOR BUTTONS -->
-      <button class="button is-warning is-normal is-responsive is-hover is-focus is-active joke">Joke</button>
-      <button class="button is-danger is-normal is-responsive is-hover is-focus is-active">Favorite</button>
-      <div class="notification is-warning" id="joke-display">
-        <button class="delete"></button>
-      </div>
-    </section>
-<!-- End of Joke API content -->
 
-<!-- Start of Giphy API content -->
-  <input class="input is-warning" id="search" for="search" type="text search" placeholder="Search">
-  <button class="button is-warning is-normal is-responsive is-hover is-focus is-active joke">Go</button>
-  <div class="giph"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@600;&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Giph Me Something Punny</title>
+</head>
+
+<body>
+  <!-- Menu to look up favorited jokes -->
+  <header>
+    <nav class="breadcrumb menu" aria-label="breadcrumbs">
+      <ul>
+        <li><a id="favorites" href="#">Check Your Favorites</a></li>
+        <li class="is-active"><a href="#" aria-current="page"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- start of Joke API content -->
+  <section class="main">
+    <div class="page-content">
+      <h1>Giph Me Something Punny</h1>
+    </div>
+
+      <div class="jokebtns-favbtn">
+        <button class="button is-warning is-normal is-responsive is-active" id="goBackBtn">Previous Joke</button>
+        <button class="button is-warning is-normal is-responsive is-active joke" id="getJokeBtn">Next Joke</button>
+        <button class="button is-danger is-normal is-responsive is-active" id="favicon">Favorite</button>
+      </div>
+      <div id="joke-display"></div>
+  
+    <!-- End of Joke API content -->
+    <!-- Start of Giphy API content -->
+    <div class="success">
+      <h2 id="emoji">Search Giphy Emoji:</h2>
+      <input class="input is-success" id="search" for="search" type="text search" placeholder="Search">
+      <button class="button is-success is-normal is-responsive is-active joke" id="goBtn">Go</button>
+
+    </div>
+    <div class="giph">
+    </div>
+  </section>
   <!-- End of Giphy API content -->
-    <script src="./assets/js/giphy-script.js"></script>
-    <script src="./assets/js/jokes-script.js"></script>
+  <script src="./assets/js/giphy-script.js"></script>
+  <script src="./assets/js/jokes-script.js"></script>
 </body>
+
 </html>
